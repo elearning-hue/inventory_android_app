@@ -63,12 +63,12 @@ fun LoginScreen() {
             .imePadding()
             .verticalScroll(rememberScrollState())
             .padding(horizontal = 22.dp, vertical = 48.dp),
-        horizontalAlignment = Alignment.CenterVertically,
+        horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
     ) {
         Column(
             Modifier.widthIn(max = 380.dp).fillMaxWidth(),
-            horizontalAlignment = Alignment.CenterVertically,
+            horizontalAlignment = Alignment.CenterHorizontally,
         ) {
             Crest((Config.HOTEL_NAME.firstOrNull() ?: 'G').toString(), size = 56)
             Spacer(Modifier.height(14.dp))

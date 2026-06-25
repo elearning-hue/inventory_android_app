@@ -81,7 +81,7 @@ fun InventoryScreen(me: AppUser?, online: Boolean) {
 
     Box(Modifier.fillMaxSize()) {
         if (loading) {
-            Column(Modifier.fillMaxSize(), verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.CenterVertically) {
+            Column(Modifier.fillMaxSize(), verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.CenterHorizontally) {
                 CircularProgressIndicator(color = c.accent)
                 Spacer(Modifier.height(10.dp))
                 Text("Loading stock…", color = c.muted)

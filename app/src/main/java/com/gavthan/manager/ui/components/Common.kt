@@ -370,7 +370,7 @@ fun EmptyState(emoji: String, text: String) {
         Modifier
             .fillMaxWidth()
             .padding(vertical = 34.dp, horizontal = 16.dp),
-        horizontalAlignment = Alignment.CenterVertically,
+        horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Text(emoji, fontSize = 34.sp)
         Spacer(Modifier.height(6.dp))

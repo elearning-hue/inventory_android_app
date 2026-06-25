@@ -246,7 +246,7 @@ fun LedgerScreen(me: AppUser?, online: Boolean) {
             Column(
                 Modifier.fillMaxSize(),
                 verticalArrangement = Arrangement.Center,
-                horizontalAlignment = Alignment.CenterVertically,
+                horizontalAlignment = Alignment.CenterHorizontally,
             ) {
                 CircularProgressIndicator(color = c.accent)
                 Spacer(Modifier.height(10.dp))

@@ -4,7 +4,6 @@ import io.github.jan.supabase.realtime.PostgresAction
 import io.github.jan.supabase.realtime.RealtimeChannel
 import io.github.jan.supabase.realtime.channel
 import io.github.jan.supabase.realtime.postgresChangeFlow
-import io.github.jan.supabase.realtime.removeChannel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
@@ -58,6 +57,6 @@ class RealtimeSub(
         val ch = channel ?: return
         channel = null
         _live.value = false
-        scope.launch { runCatching { Supa.client.removeChannel(ch) } }
+        scope.launch { runCatching { ch.unsubscribe() } }
     }
 }

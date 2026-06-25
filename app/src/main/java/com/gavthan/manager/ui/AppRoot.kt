@@ -221,7 +221,7 @@ private fun ModuleTab(emoji: String, label: String, on: Boolean, modifier: Modif
             .border(1.dp, if (on) c.accent else c.surface2, RoundedCornerShape(12.dp))
             .clickable { onClick() }
             .padding(vertical = 10.dp, horizontal = 8.dp),
-        horizontalAlignment = Alignment.CenterVertically,
+        horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Text(emoji, fontSize = 17.sp)
         Spacer(Modifier.height(2.dp))
@@ -235,7 +235,7 @@ private fun BootScreen() {
     Column(
         Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterVertically,
+        horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Crest((Config.HOTEL_NAME.firstOrNull() ?: 'G').toString(), size = 56)
         Spacer(Modifier.height(14.dp))
@@ -249,7 +249,7 @@ private fun DisabledScreen(onSignOut: () -> Unit) {
     Column(
         Modifier.fillMaxSize().padding(24.dp),
         verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterVertically,
+        horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Text("Account disabled", color = c.ink, fontWeight = FontWeight.ExtraBold, fontSize = 24.sp)
         Spacer(Modifier.height(8.dp))
