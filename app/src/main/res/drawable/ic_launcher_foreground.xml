@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- White ledger card -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M34,30 h40 a7,7 0 0 1 7,7 v34 a7,7 0 0 1 -7,7 h-40 a7,7 0 0 1 -7,-7 v-34 a7,7 0 0 1 7,-7 z" />
+    <!-- Ledger lines -->
+    <path android:fillColor="#1F6F54" android:pathData="M39,43 h22 v5 h-22 z" />
+    <path android:fillColor="#1F6F54" android:pathData="M39,53 h31 v5 h-31 z" />
+    <path android:fillColor="#B5492A" android:pathData="M39,63 h14 v5 h-14 z" />
+</vector>

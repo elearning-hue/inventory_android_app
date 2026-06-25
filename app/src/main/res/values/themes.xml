@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Window/splash theme used before Compose takes over. Colors are mirrored
+         in Compose (see ui/theme). NoActionBar because the UI is fully Compose. -->
+    <style name="Theme.GavthanManager" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/cream</item>
+        <item name="android:statusBarColor">@color/cream</item>
+        <item name="android:navigationBarColor">@color/cream</item>
+    </style>
+</resources>

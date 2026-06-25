@@ -1,0 +1,14 @@
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+
+# Local reference clone of the source web app — not part of the Android project
+/web-source
+.externalNativeBuild
+.cxx
+local.properties
+/app/build
